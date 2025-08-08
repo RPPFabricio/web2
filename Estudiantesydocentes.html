@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes y Docentes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .btn-principal {
+            background-color: #4ced72;
+            color: #d01818;
+            border: 2px solid #2c55c3;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 5px 10px 16px #011c07;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+
+        .btn-principal:hover {
+            background-color: #016a18;
+            transform: scale(1.1);
+            color: white;
+        }
+
+        ul.menu {
+            list-style: none;
+            display: flex;
+            gap: 120px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu > li {
+            position: relative;
+            background-color: #f04a08;
+            padding: 15px 25px;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .menu > li:hover {
+            background-color: #c13c04;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 110%;
+            left: 0;
+            background-color: #ff9b9b;
+            border: 3px solid #0d0c0c;
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .submenu table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .submenu th {
+            background-color: #f04a08;
+            color: white;
+            padding: 10px;
+        }
+
+        .submenu td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .submenu a button {
+            padding: 8px 20px;
+            font-size: 14px;
+            background-color: #00c6ff;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submenu a button:hover {
+            background-color: #007eaa;
+            transform: scale(1.05);
+        }
+
+       .center {
+        text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Estudiantes y Docentes</h1>
+
+    <a href="index.html" class="btn-principal">Página Principal</a>
+
+    <ul class="menu">
+        <li>
+            DOCENTES
+            <div class="submenu">
+                <table>
+                    <tr><th>DOCENTES</th></tr>
+                    <tr> <td><a href="Secretaria de Educación.pdf" target="_blank" rel="noopener noreferrer"><button>Docentes 2025</button></a></td></tr>
+                   
+                     
+                   
+                </table>
+            </div>
+        </li>
+
+        <li>
+            ESTUDIANTES
+            <div class="submenu">
+                <table>
+                    <tr><th>ESTUDIANTES</th></tr>
+                    <tr><td><a href=""><button>Estudiantes 2025</button></a></td></tr>
+                    
+                </table>
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>

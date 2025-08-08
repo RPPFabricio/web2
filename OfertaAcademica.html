@@ -1,0 +1,119 @@
+
+<html lang="es">
+<head>
+   
+
+  <meta charset="UTF-8">
+  <title>Oferta Académica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f0f0;
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+   
+    .dropdown-button {
+      background-color: #5aa9d4;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dropdown-button:hover {
+      background-color: #45a049;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .Boton-llamativo {
+        background-color: #4ced72;
+        color: rgb(239, 67, 81);
+        border: 1px solid #2c55c3;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow:5px 10px 16px #011c07;
+
+    }
+    body {
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .Boton-llamativo:hover {
+        background: #016a18;
+        transform: scale(1.2);
+
+    }
+
+  </style>
+</head>
+<body>
+  <a href="index.html"> <button class="Boton-llamativo">Página Principal</button> </a>
+  <h2>Te ofrecemos diferentes módulos y carreras en nuestra Institución</h2>
+
+  <div class="menu-container">
+    <div class="dropdown">
+      <button class="dropdown-button">Módulos</button>
+      <div class="dropdown-content">
+        <a href="#">Madera</a>
+        <a href="#">Electricidad</a>
+        <a href="#">Hogar</a>
+        <a href="#">Estructuras Metálicas</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-button">Carreras</button>
+      <div class="dropdown-content">
+        <a href="#">BTP Informática</a>
+        <a href="#">BTP Electricidad</a>
+        <a href="#">BTP Administración Hotelera</a>
+        <a href="#">BTP Estructuras Metálicas</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

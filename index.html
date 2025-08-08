@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instituto Rafael Pineda Ponce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aquamarine;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #3881e6;
+            padding: 30px 0;
+        }
+
+        nav ul.menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .menu li a {
+            background-color: #01f8d7;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .menu li a:hover {
+            background-color: #00cbb0;
+            transform: scale(1.05);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .contenedor-logo {
+            width: 90%;
+            max-width: 1100px;
+            background-color: #b2ebf2;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .imagen-giratoria {
+            width: 250px;
+            height: 250px;
+            animation: girarYInverso 4s linear infinite;
+        }
+
+        @keyframes girarYInverso {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        table.detalle {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .detalle th, .detalle td {
+            border: 1px solid #0097a7;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .detalle th {
+            background-color: #00acc1;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #3881e6;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="OfertaAcademica.html">Oferta Académica</a></li>
+                <li><a href="Estudiantesydocentes.html">Docente y Estudiante</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor-logo">
+            <img src="logoo.png" alt="Logo del instituto" class="imagen-giratoria">
+            <div class="info">
+                <h1>Instituto Rafael Pineda Ponce</h1>
+                <table class="detalle">
+                    <tr>
+                        <th>Información</th>
+                        <th>Detalle</th>
+                    </tr>
+                    <tr>
+                        <td>Nombre del Colegio</td>
+                        <td>Rafael Pineda Ponce</td>
+                    </tr>
+                    <tr>
+                        <td>Ubicación</td>
+                        <td>Santiago, Tela</td>
+                    </tr>
+                    <tr>
+                        <td>Especialidad</td>
+                        <td>Técnico</td>
+                    </tr>
+                    <tr>
+                        <td>Contacto</td>
+                        <td>9675-0078</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
